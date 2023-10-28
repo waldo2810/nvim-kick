@@ -25,5 +25,12 @@ return {
         config = function()
             require('custom.plugins.configs.nvim-tree')
         end,
-    }
+    },
+    {
+        "terrortylor/nvim-comment",
+        config = function()
+            require('nvim_comment').setup()
+        end
+    },
+    { "tveskag/nvim-blame-line" }
 }
